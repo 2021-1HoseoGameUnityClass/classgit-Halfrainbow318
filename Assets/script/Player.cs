@@ -29,9 +29,9 @@ public class Player : MonoBehaviour
             PlayerJump();
         }
 
-        if (Input.GetKeyDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
-            PlayerJump();
+            Fire();
         }
     }
 
@@ -83,7 +83,8 @@ public class Player : MonoBehaviour
 
     private void Fire()
     {
-        float direction = transform.localPosition.x;
+        GetComponent<AudioSource>().Play();
+        float direction = transform.localScale.x;
         Quaternion quaternion = new Quaternion(0, 0, 0, 0);
         Instantiate(bulletObj, bulletPos.transform.position, quaternion).GetComponent<Bullet>().InstantiateBullet(direction);
     }
