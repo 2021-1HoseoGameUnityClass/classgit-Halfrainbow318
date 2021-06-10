@@ -57,8 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\script\Player.cs" />
-    <Compile Include="Assets\script\Bullet.cs" />
     <Compile Include="Assets\script\Enemy.cs" />
+    <Compile Include="Assets\script\Camera.cs" />
+    <Compile Include="Assets\script\Pad.cs" />
+    <Compile Include="Assets\script\Bullet.cs" />
+    <Compile Include="Assets\script\DataManager.cs" />
+    <Compile Include="Assets\script\UIManager.cs" />
+    <Compile Include="Assets\script\SaveData.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
